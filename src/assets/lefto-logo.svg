@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 44" fill="none">
+  <!-- Modern energetic LEFTO logo with food rescue leaf & bowl motif -->
+  <g transform="translate(4, 4)">
+    <!-- Brand Icon: dynamic food rescue bowl with fresh leaf spark -->
+    <rect width="36" height="36" rx="10" fill="#15803D"/>
+    <path d="M10 21C10 26 14 29 18 29C22 29 26 26 26 21H10Z" fill="#FEF08A"/>
+    <path d="M14 14C14 14 17 11 22 13C22 18 18 19 14 14Z" fill="#FFFFFF"/>
+    <circle cx="24" cy="11" r="2.5" fill="#F97316"/>
+  </g>
+  <!-- Wordmark LEFTO -->
+  <text x="48" y="27" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="22" letter-spacing="-0.03em" fill="#111827">LEFTO</text>
+  <circle cx="127" cy="17" r="3.5" fill="#F97316"/>
+  <!-- Tagline badge tiny -->
+  <text x="49" y="36" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="8" letter-spacing="0.08em" fill="#15803D">RESCUE FOOD</text>
+</svg>

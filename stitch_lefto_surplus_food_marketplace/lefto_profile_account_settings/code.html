@@ -1,0 +1,842 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "background": "#f9f9ff",
+          "on-primary": "#ffffff",
+          "on-surface": "#141b2b",
+          "on-primary-container": "#d3ffd5",
+          "on-tertiary": "#ffffff",
+          "surface-container": "#e9edff",
+          "tertiary-fixed": "#9cf2e8",
+          "on-secondary": "#ffffff",
+          "surface-tint": "#006d30",
+          "on-tertiary-fixed": "#00201d",
+          "on-tertiary-fixed-variant": "#00504a",
+          "surface-variant": "#dce2f7",
+          "surface-container-high": "#e1e8fd",
+          "surface-container-highest": "#dce2f7",
+          "on-primary-fixed-variant": "#005323",
+          "on-secondary-fixed": "#341100",
+          "outline-variant": "#becabc",
+          "tertiary-container": "#1b7c74",
+          "outline": "#6f7a6e",
+          "surface-bright": "#f9f9ff",
+          "secondary": "#9d4300",
+          "on-secondary-container": "#5c2400",
+          "secondary-fixed-dim": "#ffb690",
+          "secondary-fixed": "#ffdbca",
+          "secondary-container": "#fd761a",
+          "inverse-on-surface": "#edf0ff",
+          "surface-container-low": "#f1f3ff",
+          "error-container": "#ffdad6",
+          "inverse-primary": "#79db8d",
+          "surface-dim": "#d3daef",
+          "on-background": "#141b2b",
+          "error": "#ba1a1a",
+          "on-primary-fixed": "#00210a",
+          "on-error-container": "#93000a",
+          "primary-container": "#15803d",
+          "on-surface-variant": "#3f493f",
+          "tertiary-fixed-dim": "#80d5cb",
+          "surface": "#f9f9ff",
+          "primary-fixed": "#95f8a7",
+          "on-tertiary-container": "#c5fff7",
+          "surface-container-lowest": "#ffffff",
+          "on-error": "#ffffff",
+          "on-secondary-fixed-variant": "#783200",
+          "primary": "#00652c",
+          "tertiary": "#00625b",
+          "primary-fixed-dim": "#79db8d",
+          "inverse-surface": "#293040"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.5rem",
+          "space-3xl": "3rem",
+          "space-2xl": "2rem",
+          "space-md": "1rem",
+          "gutter-mobile": "0.75rem",
+          "gutter-desktop": "1.5rem",
+          "layout-margin-mobile": "1rem",
+          "space-sm": "0.75rem",
+          "layout-margin-desktop": "2.5rem",
+          "space-xl": "1.5rem",
+          "space-2xs": "0.25rem",
+          "space-lg": "1.25rem",
+          "layout-margin-tablet": "1.5rem"
+        },
+        "fontFamily": {
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "price-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "label-badge": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "price-strikethrough": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "label-button": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-hero": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "price-hero": [
+            "22px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-badge": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "price-strikethrough": [
+            "14px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-button": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><img alt="Brand logo. - Primary color: #15803d
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WV_GtgTpZkx7969jUm9JmqkYTfU0KAFlaKR4xe8IFOmW-kfGSXXHFGn7Uy8KIWan-LsCB7cKkLWmmmrLXfxDwRQ4-r8yhQBHcBnLXjZNgt0sCxTxj2xXLOeEYn9IogZAy-RM46eS30_diDgEHJzTeZ1XQnp1RmmHMvR0EinPli8_agDk1pqlHKUx3W0VG9yXRSJvEJoOBZY1Gaakn0k-TWnANHJfcHlK98Ik7dEUmW2GZvYnYzmiX3dQA9"><span class="font-headline-lg text-headline-lg text-primary tracking-tight font-extrabold">LEFTO</span></div><div class="hidden md:flex items-center flex-1 max-w-2xl mx-space-md gap-space-sm"><div class="flex items-center gap-space-2xs bg-surface-container-low px-space-sm py-space-xs rounded-lg shrink-0 cursor-pointer"><span class="material-symbols-outlined text-primary text-[20px]">location_on</span><span class="font-headline-sm text-headline-sm text-on-surface">Greater Noida</span><span class="material-symbols-outlined text-outline text-[18px]">arrow_drop_down</span></div><div class="flex-1 flex items-center bg-surface-container-low rounded-xl px-space-md py-space-xs gap-space-xs shadow-inner"><span class="material-symbols-outlined text-primary text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="Search restaurants, cafés, bakeries or food..." type="text"></div></div><div class="flex items-center gap-space-md shrink-0"><nav class="flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-button text-label-button px-space-sm py-space-xs rounded-lg"><a class="hidden xl:inline-block font-label-button text-label-button text-on-surface-variant hover:text-on-surface" data-path="marketplace-explore" href="#">Explore</a><a class="font-label-button text-label-button text-on-surface-variant hover:text-on-surface" data-path="order-history" href="#">Orders</a><a class="hidden sm:inline-block font-label-button text-label-button text-on-surface-variant hover:text-on-surface" data-path="partner-onboarding" href="#">Become a Partner</a><a aria-current="page" class="bg-primary-container text-on-primary font-label-button text-label-button px-space-sm py-space-xs rounded-lg" data-path="profile-account" href="#">Profile</a></nav><div class="flex items-center gap-space-sm"><a class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors" data-path="cart-checkout" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary-container"></span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop py-space-xl">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-body-sm font-body-sm text-outline mb-space-lg">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Profile</span>
+</nav>
+<!-- Page Header & Main Profile Card -->
+<header class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-2xl shadow-sm mb-space-2xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="relative shrink-0">
+<div class="w-20 h-20 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-lg text-headline-lg shadow-sm">
+              R
+            </div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Rishi</h1>
+<span class="inline-flex items-center gap-space-2xs bg-on-primary-container/20 text-primary px-space-xs py-space-2xs rounded-full font-label-badge text-label-badge font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+                Verified Food Rescuer
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex flex-wrap items-center gap-x-space-md gap-y-space-2xs">
+<span class="inline-flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-outline text-[16px]">mail</span>
+                rishi@example.com
+              </span>
+<span class="inline-flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-outline text-[16px]">smartphone</span>
+                +91 98XXXXXX42
+              </span>
+</p>
+<p class="font-body-sm text-body-sm text-outline mt-space-2xs">Member since August 2024 · Greater Noida Zone</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs bg-surface-container-lowest text-on-surface hover:text-primary font-label-button text-label-button px-space-md py-space-xs rounded-xl shadow-sm hover:shadow transition-all" id="editProfileBtn">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+            Edit Profile
+          </button>
+</div>
+</div>
+</header>
+<!-- Two-Column Desktop Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Account Navigation Sidebar (3 Cols / ~25%) -->
+<aside class="lg:col-span-3 w-full sticky top-24">
+<nav aria-label="Account navigation" class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm flex flex-col gap-space-2xs">
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary font-label-button text-label-button transition-colors" href="#profile-overview">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">person</span>
+              Profile
+            </div>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-low font-label-button text-label-button transition-colors" href="#active-order">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">shopping_bag</span>
+              My Orders
+            </div>
+<span class="bg-secondary-container text-on-secondary px-space-xs py-space-2xs rounded-full font-label-badge text-label-badge">1 Active</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-low font-label-button text-label-button transition-colors" href="#saved-places">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">bookmark</span>
+              Saved Places
+            </div>
+<span class="font-body-sm text-body-sm text-outline">1</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-low font-label-button text-label-button transition-colors" href="#notifications">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">notifications</span>
+              Notifications
+            </div>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-low font-label-button text-label-button transition-colors" href="#payment-methods">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">account_balance_wallet</span>
+              Payment Methods
+            </div>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-low font-label-button text-label-button transition-colors" href="#savings-section">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">eco</span>
+              My Savings
+            </div>
+<span class="text-primary font-headline-sm text-body-sm font-bold">₹2,340</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-low font-label-button text-label-button transition-colors" href="#help-support">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">help_outline</span>
+              Help &amp; Support
+            </div>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-low font-label-button text-label-button transition-colors" href="#settings-data">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">settings</span>
+              Settings
+            </div>
+</a>
+</nav>
+<!-- Environmental Impact Snippet Card -->
+<div class="mt-space-lg bg-surface-container-lowest rounded-2xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-primary mb-space-2xs">
+<span class="material-symbols-outlined text-[18px]">nest_eco_leaf</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider font-extrabold">Citizen Rescuer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Your rescued surplus has stopped approx. <strong class="text-on-surface">11.2 kg CO₂e</strong> from landfills in Pari Chowk &amp; Alpha zones.
+          </p>
+</div>
+</aside>
+<!-- RIGHT COLUMN: Main Content Sections (9 Cols / ~75%) -->
+<main class="lg:col-span-9 w-full flex flex-col gap-space-xl">
+<!-- SECTION 1: My LEFTO Savings (Prominent Hero Card) -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm relative overflow-hidden" id="savings-section">
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-primary/5 pointer-events-none"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs mb-space-2xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">My LEFTO Savings</h2>
+<span class="inline-flex items-center gap-space-2xs bg-secondary-fixed text-on-secondary-fixed px-space-xs py-space-2xs rounded-full font-label-badge text-label-badge font-bold">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+                  Top 5% Rescuer
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Every Rescue Bag you reserve helps keep good food from going to waste.</p>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary hover:text-on-surface font-label-button text-label-button shrink-0 transition-colors" href="#active-order">
+              View My Orders
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Impact Metrics Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-2xs">
+<span class="font-body-sm text-body-sm text-outline">Total Saved</span>
+<span class="font-headline-lg text-headline-lg text-primary font-extrabold">₹2,340</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs original menu price</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-2xs">
+<span class="font-body-sm text-body-sm text-outline">Rescue Bags</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Surplus meals collected</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-2xs">
+<span class="font-body-sm text-body-sm text-outline">CO₂e Avoided</span>
+<span class="font-headline-lg text-headline-lg text-tertiary-container font-extrabold">~11.2 kg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Methane greenhouse impact</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-2xs">
+<span class="font-body-sm text-body-sm text-outline">Food Rescued</span>
+<span class="font-headline-lg text-headline-lg text-secondary font-extrabold">8 Orders</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100% successful pick-ups</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Active Order Shortcut -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm" id="active-order">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Active Rescue Bag</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Track your active Rescue Bag or view order history.</p>
+</div>
+<span class="inline-flex items-center gap-space-2xs bg-surface-container-low text-on-surface-variant px-space-sm py-space-2xs rounded-full font-label-badge text-label-badge w-fit">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Live Order
+            </span>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-space-md md:p-space-lg flex flex-col md:flex-row items-center gap-space-lg">
+<div class="relative w-full md:w-48 h-40 rounded-xl overflow-hidden shrink-0 shadow-xs">
+<img alt="End-of-day surprise pizza box from Crust and Co" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XioEwZqAblT2v24HxBkM278tiYHpaZ23O1U1PrTsCB-bGr1LaNeww3xrdXBqRJ7JIAvESzf9gPpqBGSl6c-h-fj1xjOPKLH3N7UCo4Iun7bmyNNumgqcl86r6q7Asi-KU3yTrpWEeglFV39SuJqRUZE5nRL_aq9IwwQQn4y5lHXyuuh5R5I7MOgdeNoFCfqvntyV4vXWI8uzgUcPs42o9gFYRS_pI-5BPWnnyEJhgI_5E-OIPNmDfj2wux">
+<span class="absolute top-2 left-2 bg-secondary-container text-on-secondary font-label-badge text-label-badge px-space-xs py-space-2xs rounded-full font-bold">
+                65% OFF
+              </span>
+</div>
+<div class="flex-1 w-full flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Crust &amp; Co.</span>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="inline-flex items-center gap-space-2xs bg-on-primary-container/20 text-primary font-label-badge text-label-badge px-space-sm py-space-2xs rounded-full font-bold">
+                  Confirmed
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">End-of-Day Pizza Box</h3>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs text-body-sm font-body-sm text-on-surface-variant mt-space-2xs">
+<span class="inline-flex items-center gap-space-2xs bg-surface-container-lowest px-space-sm py-space-2xs rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+                  Today · 9:30–10:00 PM (Starts in 35 min)
+                </span>
+<span class="inline-flex items-center gap-space-2xs bg-surface-container-lowest px-space-sm py-space-2xs rounded-lg">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+                  Alpha 1, Greater Noida (1.8 km)
+                </span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-sm mt-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-price-hero text-price-hero text-on-surface font-extrabold">₹189</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹540</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface underline transition-colors" href="#">
+                    Order Details (#LFT28491)
+                  </a>
+<button class="bg-primary-container hover:bg-primary text-on-primary font-label-button text-label-button px-space-md py-space-xs rounded-xl shadow-sm transition-all flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px]">qr_code</span>
+                    View Pickup Pass
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Personal Information -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm" id="personal-info">
+<div class="flex items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Personal Information</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Update contact details associated with your pickup verification PIN.</p>
+</div>
+<button class="text-primary hover:text-on-surface font-label-button text-label-button flex items-center gap-space-2xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+              Edit Information
+            </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-2xs">
+<span class="font-body-sm text-body-sm text-outline">Full Name</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Rishi</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-2xs">
+<span class="font-body-sm text-body-sm text-outline">Email Address</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">rishi@example.com</span>
+<span class="inline-flex items-center gap-space-2xs text-primary font-label-badge text-label-badge font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Verified
+                </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-2xs">
+<span class="font-body-sm text-body-sm text-outline">Mobile Number</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">+91 98XXXXXX42</span>
+<span class="inline-flex items-center gap-space-2xs text-primary font-label-badge text-label-badge font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Verified
+                </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-2xs">
+<span class="font-body-sm text-body-sm text-outline">Marketplace Language</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">English (India)</span>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Saved Places -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm" id="saved-places">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Saved Places</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Save frequent pickup starting points to discover nearby surplus food.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Saved Location Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md shadow-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">home</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Home</h3>
+<span class="inline-flex items-center gap-space-2xs bg-primary-container text-on-primary font-label-badge text-label-badge px-space-xs py-space-2xs rounded-md mt-space-2xs">
+                      Default Pickup Anchor
+                    </span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors text-body-sm font-label-button">
+                  Edit
+                </button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Flat 402, Tower B, ATS Dolce, Alpha 1, Greater Noida, UP 201308
+              </p>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-space-xs">
+<span>Radius: &lt; 3.5 km</span>
+<span class="text-primary font-medium">12 active stores nearby</span>
+</div>
+</div>
+<!-- Add New Place Card -->
+<button class="h-full min-h-[160px] bg-surface-container-lowest hover:bg-surface-container-low rounded-xl p-space-md flex flex-col items-center justify-center gap-space-xs transition-colors shadow-xs group">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">add_location_alt</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">+ Add a new place</span>
+<span class="font-body-sm text-body-sm text-outline text-center">e.g. Office, Campus hostel, or Friend's location</span>
+</button>
+</div>
+</section>
+<!-- SECTION 5: Notification Preferences (Interactive Toggles) -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm" id="notifications">
+<div class="mb-space-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface">Notifications</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">You can change these preferences anytime to manage surplus alerts.</p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Toggle 1 -->
+<div class="flex items-center justify-between gap-space-md p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Rescue Bag availability alerts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Get notified when favorite bakeries &amp; cloud-kitchens list evening surplus</span>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out focus:outline-none" role="switch">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out mt-0.5 ml-0.5"></span>
+</button>
+</div>
+<!-- Toggle 2 -->
+<div class="flex items-center justify-between gap-space-md p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Pickup reminders</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alerts 30 mins and 10 mins before active pickup windows close</span>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out focus:outline-none" role="switch">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out mt-0.5 ml-0.5"></span>
+</button>
+</div>
+<!-- Toggle 3 -->
+<div class="flex items-center justify-between gap-space-md p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Order updates &amp; receipts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SMS &amp; WhatsApp updates for order confirmation and counter PIN</span>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out focus:outline-none" role="switch">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out mt-0.5 ml-0.5"></span>
+</button>
+</div>
+<!-- Toggle 4 -->
+<div class="flex items-center justify-between gap-space-md p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Offers &amp; weekly recommendations</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Curated surplus food discounts nearby</span>
+</div>
+<button aria-checked="false" class="toggle-btn relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-surface-container-highest transition-colors duration-200 ease-in-out focus:outline-none" role="switch">
+<span class="translate-x-0.5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out mt-0.5"></span>
+</button>
+</div>
+<!-- Toggle 5 -->
+<div class="flex items-center justify-between gap-space-md p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Waste-saving impact summary</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Monthly CO₂e and money saved environmental report</span>
+</div>
+<button aria-checked="true" class="toggle-btn relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-primary-container transition-colors duration-200 ease-in-out focus:outline-none" role="switch">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out mt-0.5 ml-0.5"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 6: Payment Methods -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm" id="payment-methods">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Payment Methods</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Saved payment handles for faster surplus reservations.</p>
+</div>
+<button class="bg-surface-container hover:bg-surface-container-high text-on-surface font-label-button text-label-button px-space-md py-space-xs rounded-xl shadow-xs transition-colors self-start sm:self-auto">
+              + Add Payment Method
+            </button>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">••••••••@upi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(PhonePe)</span>
+<span class="bg-on-primary-container/30 text-primary font-label-badge text-label-badge px-space-xs py-space-2xs rounded">Default</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                  Encrypted &amp; PCI-DSS Compliant handle
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="text-on-surface-variant hover:text-on-surface font-label-button text-label-button">Manage</button>
+<button class="text-outline hover:text-error font-label-button text-label-button">Remove</button>
+</div>
+</div>
+</section>
+<!-- SECTION 7: Need Help? Support Hub -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm" id="help-support">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Need Help?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Our Greater Noida support team is active until 11:30 PM IST.</p>
+</div>
+<div class="flex items-center gap-space-2xs text-primary font-body-sm text-body-sm font-semibold">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+              Support Desk Online
+            </div>
+</div>
+<!-- Quick Action Help Chips -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mb-space-lg">
+<button class="flex items-center justify-center gap-space-2xs bg-surface-container-low hover:bg-surface-container-high text-on-surface p-space-sm rounded-xl font-headline-sm text-body-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+              Order issue
+            </button>
+<button class="flex items-center justify-center gap-space-2xs bg-surface-container-low hover:bg-surface-container-high text-on-surface p-space-sm rounded-xl font-headline-sm text-body-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+              Payment issue
+            </button>
+<button class="flex items-center justify-center gap-space-2xs bg-surface-container-low hover:bg-surface-container-high text-on-surface p-space-sm rounded-xl font-headline-sm text-body-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+              Pickup issue
+            </button>
+<button class="flex items-center justify-center gap-space-2xs bg-surface-container-low hover:bg-surface-container-high text-on-surface p-space-sm rounded-xl font-headline-sm text-body-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">privacy_tip</span>
+              Account &amp; privacy
+            </button>
+</div>
+<div class="flex flex-wrap items-center gap-space-md">
+<a class="bg-primary-container hover:bg-primary text-on-primary font-label-button text-label-button px-space-md py-space-xs rounded-xl shadow-sm transition-colors flex items-center gap-space-2xs" href="#">
+<span class="material-symbols-outlined text-[18px]">support</span>
+              Visit Help &amp; Support
+            </a>
+<button class="bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-button text-label-button px-space-md py-space-xs rounded-xl shadow-xs transition-colors flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px] text-primary">chat</span>
+              Contact LEFTO Support
+            </button>
+</div>
+</section>
+<!-- SECTION 8: Settings & Account Privacy -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm" id="settings-data">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Settings &amp; Data</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage your credentials, privacy rights, and regulatory data permissions.</p>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-low">
+<a class="flex items-center justify-between py-space-md hover:px-space-xs rounded-lg transition-all text-on-surface" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">lock_reset</span>
+<span class="font-body-md text-body-md font-medium">Account security &amp; password</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between py-space-md hover:px-space-xs rounded-lg transition-all text-on-surface" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">shield</span>
+<span class="font-body-md text-body-md font-medium">Privacy &amp; data sharing</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between py-space-md hover:px-space-xs rounded-lg transition-all text-on-surface" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">description</span>
+<span class="font-body-md text-body-md font-medium">Terms &amp; Conditions</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between py-space-md hover:px-space-xs rounded-lg transition-all text-on-surface" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">download</span>
+<span class="font-body-md text-body-md font-medium">Download personal data</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between py-space-md hover:px-space-xs rounded-lg transition-all text-on-surface" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">manage_accounts</span>
+<span class="font-body-md text-body-md font-medium">Manage account consent</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- LOG OUT SECTION -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Active Session</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">You can sign back in anytime to access your Rescue Bags and orders.</p>
+</div>
+<button class="bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-button text-label-button px-space-lg py-space-xs rounded-xl shadow-xs transition-colors shrink-0 flex items-center gap-space-2xs self-start sm:self-auto">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+            Log out from all devices
+          </button>
+</section>
+<!-- DEVELOPER / ALTERNATE STATE PREVIEW ACCORDION -->
+<section class="w-full bg-surface-container-low rounded-2xl p-space-md md:p-space-lg">
+<div class="flex items-center justify-between cursor-pointer" id="devPreviewToggle">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">developer_board</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">State Previews &amp; UI Drawers</span>
+<span class="bg-surface-container-highest font-label-badge text-label-badge px-space-xs py-space-2xs rounded">Dev Mode</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform duration-200" id="devPreviewChevron">expand_more</span>
+</div>
+<div class="hidden mt-space-md pt-space-md flex flex-col gap-space-md" id="devPreviewContent">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Preview alternate states such as empty account views and quick drawer components:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Empty State: No Saved Places -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex flex-col items-center text-center gap-space-2xs">
+<span class="material-symbols-outlined text-outline text-[32px]">place</span>
+<span class="font-headline-sm text-body-sm font-semibold">No Saved Places Yet</span>
+<span class="font-body-sm text-body-sm text-outline">Add frequent areas to find surplus nearest you faster.</span>
+</div>
+<!-- Empty State: No Order History -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex flex-col items-center text-center gap-space-2xs">
+<span class="material-symbols-outlined text-outline text-[32px]">shopping_basket</span>
+<span class="font-headline-sm text-body-sm font-semibold">No Past Rescue Orders</span>
+<span class="font-body-sm text-body-sm text-outline">Explore surplus pizzas, bakery mystery bags, and cloud bowls.</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+<!-- EDIT PROFILE MODAL (INTERACTIVE) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-on-surface/40 backdrop-blur-sm hidden" id="editProfileModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg mx-space-md p-space-lg md:p-space-xl shadow-xl flex flex-col gap-space-md animate-in fade-in zoom-in-95">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Edit Profile Details</h3>
+<button class="text-outline hover:text-on-surface p-space-2xs rounded-lg" id="closeModalBtn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="editProfileForm">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Full Name</label>
+<input class="bg-surface-container-low px-space-md py-space-xs rounded-xl font-body-md text-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary/20" type="text" value="Rishi">
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Email Address</label>
+<input class="bg-surface-container-low px-space-md py-space-xs rounded-xl font-body-md text-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary/20" type="email" value="rishi@example.com">
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Phone Number</label>
+<input class="bg-surface-container-low px-space-md py-space-xs rounded-xl font-body-md text-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary/20" type="tel" value="+91 98XXXXXX42">
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm mt-space-xs">
+<button class="px-space-md py-space-xs font-label-button text-label-button text-on-surface-variant hover:text-on-surface" id="cancelModalBtn" type="button">
+            Cancel
+          </button>
+<button class="bg-primary-container hover:bg-primary text-on-primary font-label-button text-label-button px-space-lg py-space-xs rounded-xl shadow-sm transition-colors" type="submit">
+            Save Changes
+          </button>
+</div>
+</form>
+</div>
+</div>
+<script>
+    (function() {
+      // Toggle switches micro-interaction
+      const toggles = document.querySelectorAll('.toggle-btn');
+      toggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const isChecked = btn.getAttribute('aria-checked') === 'true';
+          const newState = !isChecked;
+          btn.setAttribute('aria-checked', newState);
+          const handle = btn.querySelector('span');
+          if (newState) {
+            btn.classList.remove('bg-surface-container-highest');
+            btn.classList.add('bg-primary-container');
+            handle.classList.remove('translate-x-0.5');
+            handle.classList.add('translate-x-5');
+          } else {
+            btn.classList.remove('bg-primary-container');
+            btn.classList.add('bg-surface-container-highest');
+            handle.classList.remove('translate-x-5');
+            handle.classList.add('translate-x-0.5');
+          }
+        });
+      });
+
+      // Edit Profile Modal Handling
+      const editBtn = document.getElementById('editProfileBtn');
+      const modal = document.getElementById('editProfileModal');
+      const closeBtn = document.getElementById('closeModalBtn');
+      const cancelBtn = document.getElementById('cancelModalBtn');
+      const form = document.getElementById('editProfileForm');
+
+      function openModal() {
+        if (modal) modal.classList.remove('hidden');
+      }
+      function closeModal() {
+        if (modal) modal.classList.add('hidden');
+      }
+
+      if (editBtn) editBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          closeModal();
+        });
+      }
+
+      // Developer State Accordion
+      const devToggle = document.getElementById('devPreviewToggle');
+      const devContent = document.getElementById('devPreviewContent');
+      const devChevron = document.getElementById('devPreviewChevron');
+      if (devToggle && devContent) {
+        devToggle.addEventListener('click', () => {
+          devContent.classList.toggle('hidden');
+          if (devChevron) {
+            devChevron.classList.toggle('rotate-180');
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl py-space-3xl"><div class="w-full px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-2xs"><span class="font-headline-lg text-headline-lg text-primary font-extrabold">LEFTO</span></div><p class="font-body-md text-body-md text-on-surface-variant">India's hyper-local food surplus rescue marketplace. Connecting mindful food lovers with restaurants, bakeries, and cloud-kitchens to eliminate food waste.</p><div class="flex items-center gap-space-xs mt-space-xs bg-surface-container-highest px-space-sm py-space-2xs rounded-lg w-fit"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-label-badge text-label-badge text-primary uppercase tracking-wider">Mission Green India 2025</span></div></div><div class="flex flex-col gap-space-xs"><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">For Foodies</h4><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface" data-path="marketplace-explore" href="#">Nearby Mystery Bags</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface" data-path="order-history" href="#">Order History</a><a aria-current="page" class="text-primary font-bold" data-path="profile-account" href="#">Rescue Impact Wallet</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface" data-path="faqs-help" href="#">Consumer Help &amp; FAQs</a></nav></div><div class="flex flex-col gap-space-xs"><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">For Businesses</h4><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface" data-path="partner-onboarding" href="#">Become a Food Partner</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface" data-path="partner-portal" href="#">Merchant Dashboard</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface" data-path="partner-standards" href="#">FSSAI &amp; Safety Standards</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface" data-path="sustainability-reports" href="#">Zero-Waste Certification</a></nav></div><div class="flex flex-col gap-space-xs"><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">Location &amp; Coverage</h4><p class="font-body-md text-body-md text-on-surface-variant">Active across Greater Noida, Noida Expressway, Pari Chowk, and Knowledge Park zones.</p><p class="font-body-sm text-body-sm text-outline mt-space-2xs">Operating 7:00 AM - 11:30 PM IST</p></div></div><div class="w-full px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop mt-space-2xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-outline">© 2025 LEFTO Technologies Pvt. Ltd. All rights reserved.</p><nav class="flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="terms-of-service" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="fssai-guidelines" href="#">FSSAI Guidelines</a></nav></div></footer></body></html>

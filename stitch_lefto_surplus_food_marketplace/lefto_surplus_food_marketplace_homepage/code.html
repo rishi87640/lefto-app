@@ -1,0 +1,1028 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>LEFTO - Surplus Food Marketplace</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "secondary-container": "#fd761a", "error-container": "#ffdad6", "inverse-on-surface": "#edf0ff", "on-surface-variant": "#3f493f", "primary-container": "#15803d", "on-tertiary-fixed-variant": "#00504a", "on-secondary-fixed": "#341100", "error": "#ba1a1a", "inverse-primary": "#79db8d", "primary-fixed": "#95f8a7", "on-primary-container": "#d3ffd5", "tertiary-fixed": "#9cf2e8", "surface-dim": "#d3daef", "primary": "#00652c", "on-tertiary-container": "#c5fff7", "on-secondary-fixed-variant": "#783200", "on-surface": "#141b2b", "outline": "#6f7a6e", "on-secondary": "#ffffff", "background": "#f9f9ff", "tertiary-fixed-dim": "#80d5cb", "secondary-fixed": "#ffdbca", "on-error-container": "#93000a", "primary-fixed-dim": "#79db8d", "surface": "#f9f9ff", "surface-tint": "#006d30", "surface-container-highest": "#dce2f7", "tertiary-container": "#1b7c74", "inverse-surface": "#293040", "surface-container": "#e9edff", "surface-container-low": "#f1f3ff", "surface-container-high": "#e1e8fd", "on-background": "#141b2b", "surface-variant": "#dce2f7", "outline-variant": "#becabc", "on-error": "#ffffff", "on-primary-fixed-variant": "#005323", "surface-bright": "#f9f9ff", "secondary-fixed-dim": "#ffb690", "secondary": "#9d4300", "tertiary": "#00625b", "on-secondary-container": "#5c2400", "on-tertiary-fixed": "#00201d", "on-primary": "#ffffff", "on-primary-fixed": "#00210a", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "layout-margin-desktop": "2.5rem", "space-2xl": "2rem", "layout-margin-tablet": "1.5rem", "gutter-mobile": "0.75rem", "gutter-desktop": "1.5rem", "space-2xs": "0.25rem", "space-sm": "0.75rem", "layout-margin-mobile": "1rem", "space-xl": "1.5rem", "space-xs": "0.5rem", "space-3xl": "3rem", "space-lg": "1.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "price-strikethrough": ["Plus Jakarta Sans"], "label-badge": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-button": ["Plus Jakarta Sans"], "price-hero": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "800" }], "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "price-strikethrough": ["14px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" }], "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-button": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "price-hero": ["22px", { "lineHeight": "26px", "letterSpacing": "-0.02em", "fontWeight": "800" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="sticky top-0 z-50 w-full bg-surface-container-lowest border-b border-outline-variant/40 shadow-[0_2px_8px_-1px_rgba(17,24,39,0.06)]"><div class="h-20 max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-xs" data-path="explore" href="#"><img alt="LEFTO Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WV_GtgTpZkx7969jUm9JmqkYTfU0KAFlaKR4xe8IFOmW-kfGSXXHFGn7Uy8KIWan-LsCB7cKkLWmmmrLXfxDwRQ4-r8yhQBHcBnLXjZNgt0sCxTxj2xXLOeEYn9IogZAy-RM46eS30_diDgEHJzTeZ1XQnp1RmmHMvR0EinPli8_agDk1pqlHKUx3W0VG9yXRSJvEJoOBZY1Gaakn0k-TWnANHJfcHlK98Ik7dEUmW2GZvYnYzmiX3dQA9"><span class="font-headline-lg text-headline-lg font-extrabold tracking-tight text-primary">LEFTO</span></a><button class="flex items-center gap-space-xs text-left px-space-sm py-space-xs rounded-xl hover:bg-surface-container-low transition-colors group" type="button"><span class="material-symbols-outlined text-primary text-xl">location_on</span><div class="flex flex-col"><div class="flex items-center gap-1"><span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary leading-tight">Greater Noida</span><span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span></div><span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[160px]">Knowledge Park III / Pari Chowk</span></div></button></div><div class="flex items-center gap-space-md shrink-0"><button class="hidden xl:flex items-center gap-space-sm bg-surface-container-low hover:bg-surface-container px-space-md py-space-xs rounded-full transition-colors text-on-surface-variant text-left w-64 border border-outline-variant/30" type="button"><span class="material-symbols-outlined text-primary text-lg">search</span><span class="font-body-md text-body-md text-on-surface-variant">Search food, bakery...</span></button><nav class="flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors hidden md:inline-block text-primary font-bold" data-path="explore" href="#">Explore Bags</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors hidden sm:flex items-center gap-1.5" data-path="orders" href="#"><span class="material-symbols-outlined text-lg text-on-surface-variant">receipt_long</span><span class="">Orders</span></a><a class="font-label-button text-label-button bg-secondary-container text-on-secondary hover:bg-secondary transition-colors px-space-md py-2 rounded-full inline-flex items-center gap-1.5 shadow-sm shrink-0" data-path="partner-onboarding" href="#"><span class="material-symbols-outlined text-base">storefront</span><span class="">Become a Partner</span></a></nav><div class="flex items-center gap-space-xs pl-space-xs border-l border-outline-variant/40"><button class="flex items-center gap-space-xs p-1 rounded-full hover:bg-surface-container-low transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkTlCdDdTio9VCOjvDG0_C0ywfdJ6CTXWjbTy2Q3dsidMQXVJVyepEcXad-D26DvM2-zuanCziNF47_oX1vDIGK-pn1bUvpSbwfhaicFSbr1B43XWms52-aMkXqVXTpbvqoL6bpmmz6p-g0K-YMDMJKYRrfSetn0ywwTkF2-VFQnoFr0_tp48SvhntPOoIdVfvWcYLBwhA5kpEMbzsrn25hZefoka15C6KkhvKxacQN8MY2TZVGPTb8w"><span class="hidden lg:inline-block font-label-button text-label-button text-on-surface">Login / Sign Up</span><span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span></button></div></div></div></header><main class="w-full pt-20 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- Top Subtle Notification Pill -->
+<div class="w-full bg-surface-container-high py-2 px-layout-margin-mobile md:px-layout-margin-desktop text-center">
+<div class="max-w-[1240px] mx-auto flex items-center justify-center gap-2">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-secondary-container text-on-secondary text-xs">⚡</span>
+<span class="font-body-sm text-body-sm text-on-surface">Evening Rush Active: <strong>42 bags</strong> ready for pickup in Pari Chowk &amp; Knowledge Park</span>
+<span class="hidden sm:inline-block text-outline-variant">•</span>
+<a class="hidden sm:inline-flex items-center gap-0.5 font-label-button text-body-sm text-primary hover:underline" href="#rescue-grid">
+<span class="">Browse deals</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 1. HERO SECTION -->
+<section class="w-full max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop pt-8 pb-12 lg:pt-14 lg:pb-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Hero Left Column -->
+<div class="lg:col-span-7 flex flex-col items-start text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant mb-4">
+<span class="material-symbols-outlined text-sm">eco</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider">Surplus Food Rescue • Greater Noida</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight mb-4">
+          Good food shouldn't <br class="hidden sm:inline"><font color="#00652c"><u>go to waste</u></font></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8 leading-relaxed">
+          Discover delicious surplus food from restaurants and cafés near you — at prices you'll love. Fresh batches, unsold evening bakes, and cloud kitchen feasts at 50–70% off.
+        </p>
+<!-- Big Search Bar -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-2.5 shadow-xl mb-6">
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+<div class="flex items-center gap-2 px-3 flex-1">
+<span class="material-symbols-outlined text-primary text-xl shrink-0">search</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md focus:outline-none" id="hero-search-input" placeholder="Search restaurants, cafés, bakeries or food..." type="text">
+</div>
+<div class="h-6 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low rounded-xl shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-base">tune</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer pr-1" id="hero-category-select">
+<option value="all">All Food Types</option>
+<option value="bakeries">Bakeries &amp; Breads</option>
+<option value="meals">Full Meals &amp; Thalis</option>
+<option value="cafes">Cafés &amp; Pastries</option>
+<option value="snacks">Snacks &amp; Street Food</option>
+</select>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button px-6 py-3 rounded-xl transition-colors shrink-0 flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="">Find Food</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Action CTAs & Value Pillars -->
+<div class="flex flex-wrap items-center gap-4 mb-6">
+<a class="bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button px-6 py-3.5 rounded-full inline-flex items-center gap-2 shadow-md transition-all" href="#rescue-grid">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+<span class="">Explore Leftovers</span>
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+</a>
+<a class="bg-surface-container-low hover:bg-surface-container text-on-surface font-label-button text-label-button px-6 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors" data-path="partner-onboarding" href="#">
+<span class="material-symbols-outlined text-lg text-secondary">storefront</span>
+<span class="">Become a Partner</span>
+</a>
+</div>
+<!-- Value / Trust Line -->
+<div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span class="font-body-sm text-body-sm">Save up to 70% money</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">eco</span>
+<span class="font-body-sm text-body-sm">Reduce urban food waste</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">store</span>
+<span class="font-body-sm text-body-sm">Support local businesses</span>
+</div>
+</div>
+</div>
+<!-- Hero Right Dynamic Preview Card -->
+<div class="lg:col-span-5 relative">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary-fixed/30 via-secondary-fixed/20 to-tertiary-fixed/30 rounded-3xl blur-2xl -z-10"></div>
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-xl relative overflow-hidden">
+<!-- Live Header Status -->
+<div class="flex items-center justify-between gap-2 pb-4 mb-4 bg-surface-container-low -mx-6 -mt-6 p-6">
+<div class="flex items-center gap-2.5">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary-container"></span>
+</span>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface leading-tight">Live Rescues Active</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Knowledge Park • Pari Chowk</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge">
+                42 Available Now
+              </span>
+</div>
+</div>
+<!-- Featured Mini Cards inside Hero Widget -->
+<div class="space-y-3 mb-5">
+<!-- Mini Preview Item 1 -->
+<div class="p-3 bg-surface-container-low rounded-2xl flex items-center gap-3 transition-transform hover:scale-[1.01]">
+<div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up artisanal bakery assortment with flaky golden croissants and freshly baked crusty bread displayed warmly inside a paper delivery bag with soft morning bakery window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR8_wWamnpPzTjQQ6OacLODUASp8C4wkORZcwjkUhDBaE_HSluLTQRx_0pnpv1Ba2sKMyTuAmcKrK3DanGrIWkWXUyXcdMrUX4nvlPiN1OVItykppZ8RF-Fk7nhGVMY9vCLP7DbNPMhNa5hCY1vvHqWqbewejBZNoZRICGMHqMWZd9U2vGBouPYP8bf6WlZT4eVZEU5kWewTL667gcLOaPNmx4fbqP1tK17jwQLkjjpy2Puho_IKMK0w">
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold truncate">Artisan Bakery Box</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary">Save 63%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Midnight Bakery • 1.2 km away</p>
+<div class="flex items-center justify-between mt-1">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₹149</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹399</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Only 2 left</span>
+</div>
+</div>
+</div>
+<!-- Mini Preview Item 2 -->
+<div class="p-3 bg-surface-container-low rounded-2xl flex items-center gap-3 transition-transform hover:scale-[1.01]">
+<div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Indian culinary scene with warm copper bowls filled with dal makhani, paneer tikka, and freshly baked tandoori butter naan on a slate background under cozy amber restaurant lamps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa3eGxiTa5q0qfj-jCt5zcvqH2PadAQvYI7bGTdr7URZ5UXPnfiv7qFjdJb6tBF4CogBgByd_fVOCOMAeryPm3omJa_Mz06vgy4kbq_UhxNlBPcGIu2L_ZkSilWBkxV9Hp6CbFwkzpfG6GSiLuHKm6EaUPJsO2D19WWnkQRZhAr3__-pE5D48_Gf_OuzY3X0Rae35RdXgI4n-oQvt8FzahSrNWEwj84P0GXA2JYGzCUh2BFdjgixcyRA">
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<div class="flex items-center gap-1 truncate">
+<span class="w-2 h-2 rounded-sm bg-primary shrink-0"></span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold truncate">Mughlai Dinner Box</span>
+</div>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-primary text-on-primary">Pure Veg</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Urban Tandoor • 2.4 km away</p>
+<div class="flex items-center justify-between mt-1">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₹199</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹499</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 bags left</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Countdown Timer Widget -->
+<div class="p-3.5 rounded-2xl bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-xl animate-pulse">timer</span>
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Night pickup window</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="hero-countdown">Closing in 41m 27s</span>
+</div>
+</div>
+<a class="font-label-button text-body-sm bg-surface-container-lowest text-primary px-3.5 py-2 rounded-xl hover:bg-surface transition-colors shadow-sm inline-flex items-center gap-1" href="#rescue-grid">
+<span class="">View Bags</span>
+<span class="material-symbols-outlined text-sm">east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. LOCATION-AWARE BAR -->
+<section class="w-full bg-surface-container-lowest shadow-sm py-4">
+<div class="max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<!-- Location Notice -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-2xl">location_on</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Rescue food near you</span>
+<span class="text-xs bg-primary-container/10 text-primary font-bold px-2 py-0.5 rounded-full">Greater Noida</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Available near Knowledge Park, Alpha 1, Pari Chowk, and Jagat Farm
+            </p>
+</div>
+<button class="ml-auto lg:ml-2 text-primary hover:text-primary-container font-label-button text-body-sm flex items-center gap-0.5 px-3 py-1.5 rounded-lg hover:bg-surface-container-low transition-colors shrink-0" type="button">
+<span class="">Change</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+<!-- Quick Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0 scrollbar-none">
+<button class="quick-filter-btn px-3.5 py-1.5 rounded-full font-label-button text-body-sm bg-surface-container-low text-on-surface hover:bg-surface-container whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span class="">Tonight (after 8 PM)</span>
+</button>
+<button class="quick-filter-btn px-3.5 py-1.5 rounded-full font-label-button text-body-sm bg-surface-container-low text-on-surface hover:bg-surface-container whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-sm text-primary">currency_rupee</span>
+<span class="">Under ₹199</span>
+</button>
+<button class="quick-filter-btn px-3.5 py-1.5 rounded-full font-label-button text-body-sm bg-surface-container-low text-on-surface hover:bg-surface-container whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary inline-block"></span>
+<span class="">Pure Veg 🌱</span>
+</button>
+<button class="quick-filter-btn px-3.5 py-1.5 rounded-full font-label-button text-body-sm bg-surface-container-low text-on-surface hover:bg-surface-container whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-sm text-secondary-container">star</span>
+<span class="">Top Rated 4.5+</span>
+</button>
+<button class="quick-filter-btn px-3.5 py-1.5 rounded-full font-label-button text-body-sm bg-surface-container-low text-on-surface hover:bg-surface-container whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-sm text-tertiary">bakery_dining</span>
+<span class="">Bakery &amp; Desserts</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. HORIZONTAL CATEGORY NAVIGATION -->
+<section class="w-full max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop pt-8 pb-4">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Explore by Category</h2>
+<div class="flex items-center gap-1">
+<button aria-label="Previous categories" class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" id="cat-scroll-left">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button aria-label="Next categories" class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" id="cat-scroll-right">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Category Track -->
+<div class="flex items-center gap-3 overflow-x-auto pb-3 pt-1 scrollbar-none scroll-smooth" id="category-track">
+<!-- All (Active) -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-primary text-on-primary font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg">apps</span>
+<span class="whitespace-nowrap">All</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-on-primary/20 text-on-primary">42</span>
+</button>
+<!-- Restaurants -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-secondary">restaurant</span>
+<span class="whitespace-nowrap">Restaurants</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">14</span>
+</button>
+<!-- Cafés -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-primary">local_cafe</span>
+<span class="whitespace-nowrap">Cafés</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">9</span>
+</button>
+<!-- Bakeries -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-secondary-container">bakery_dining</span>
+<span class="whitespace-nowrap">Bakeries</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">8</span>
+</button>
+<!-- Desserts -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-tertiary">cake</span>
+<span class="whitespace-nowrap">Desserts</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">6</span>
+</button>
+<!-- Fast Food -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-secondary">lunch_dining</span>
+<span class="whitespace-nowrap">Fast Food</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">7</span>
+</button>
+<!-- Pizza -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-secondary-container">local_pizza</span>
+<span class="whitespace-nowrap">Pizza</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">5</span>
+</button>
+<!-- Burgers -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-on-surface-variant">lunch_dining</span>
+<span class="whitespace-nowrap">Burgers</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">4</span>
+</button>
+<!-- Indian -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-primary">ramen_dining</span>
+<span class="whitespace-nowrap">Indian Thali</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">11</span>
+</button>
+<!-- Healthy -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-primary">eco</span>
+<span class="whitespace-nowrap">Healthy Bowls</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">3</span>
+</button>
+<!-- Drinks -->
+<button class="category-pill group px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-button text-body-sm flex items-center gap-2.5 shrink-0 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-tertiary">local_bar</span>
+<span class="whitespace-nowrap">Drinks</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container text-on-surface-variant">4</span>
+</button>
+</div>
+</section>
+<!-- 4. MAIN DISCOVERY SECTION ("Today's Rescue Bags") -->
+<section class="w-full max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop py-8" id="rescue-grid">
+<!-- Header with Controls -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Today's Rescue Bags</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge font-bold">Limited Quantities</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Handcrafted surplus items at deep discounts. Reserve online, show your code, and pick up during store closing windows.
+        </p>
+</div>
+<!-- Controls: Sort & Veg Toggle -->
+<div class="flex items-center gap-3 shrink-0">
+<!-- Veg Only Toggle -->
+<label class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer select-none">
+<div class="w-4 h-4 rounded-sm border-2 border-primary flex items-center justify-center p-0.5">
+<div class="w-2 h-2 rounded-full bg-primary transition-opacity" id="veg-dot"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Veg Only</span>
+<input checked="" class="sr-only" id="veg-filter-toggle" type="checkbox">
+</label>
+<!-- Sort dropdown -->
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-base">sort</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer" id="sort-select">
+<option value="nearest">Nearest First</option>
+<option value="price-asc">Price: Low to High</option>
+<option value="discount">Highest Discount</option>
+<option value="ending">Ending Soon</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Product Grid (6 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1: Midnight Bakery -->
+<article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisan bakery items including golden brown sourdough loaves, glazed cinnamon rolls, and flaky butter croissants carefully arranged on rustic butcher paper in a warm bakery shop atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVLQEpOvMvpduifWnogHm85hEx5qLF-cpdEp6wj8tC09K5ZV6T-aQ8ldTgHvN_1H1fc8HmqgTz9uv46WVdlXfW7lYB7uMgUdmPSMbeOZ5u2NYE1a08PSB6Exupp1HaKYnPd64KClu9oTKX5t25luQ_WQenpzlJYTVfp3tNH8hoFrpsavGPyidLKEAB_cQhokVz8v-YkzKwKgkdZjT5Al8uAW-ct1H4-scMjrJY1dFcR-0HXcIa8n3lTA">
+<!-- Badges Overlay -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold shadow-sm">
+              Save 63%
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-badge text-label-badge font-bold animate-pulse">
+              Ending Soon
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-badge text-label-badge font-bold shadow-sm">
+              Only 2 left!
+            </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">schedule</span>
+<span class="">Pickup 9:30 – 10:00 PM</span>
+</div>
+<div class="w-6 h-6 rounded-md bg-surface-container-lowest flex items-center justify-center shadow-sm" title="Pure Veg">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="font-semibold text-on-surface">Midnight Bakery</span>
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+</span>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary-container fill-current">star</span>
+<span class="font-headline-sm text-body-sm font-bold">4.6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(184)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-1.5 group-hover:text-primary transition-colors">
+              Surprise Artisan Bakery Bag
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+              Freshly baked sourdough, butter croissants, Danish pastries &amp; cinnamon buns from today's oven batch.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between py-3 bg-surface-container-low rounded-2xl px-4 mb-3">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Rescue Price</span>
+<div class="flex items-baseline gap-2">
+<span class="font-price-hero text-price-hero text-primary font-extrabold">₹149</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹399</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Distance</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface flex items-center justify-end gap-0.5">
+<span class="material-symbols-outlined text-xs text-primary">near_me</span>
+                  1.2 km
+                </span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button py-3 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span class="">Reserve Bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Urban Tandoor -->
+<article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rich North Indian feast featuring butter paneer masala, creamy black dal makhani, and charred garlic naan fresh from clay tandoor oven on festive brass tableware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqZi3aqW8DdLJHLbiDck6WkaEjEJEgSGP_Ou60jEKsfIVzKfHd1n0Pb-dTQyoeVim2taLPkI3dxJWSYUq60MYqkmPzzoI45htXn28fdnDVz9ueHmQqG2to_1zcbuxz_hM0A2mVYglCUeIsz-3ZkHH5d7JnfLGq4MVIYEbkar0sM0KOH0hf-t5joFAC6uUoftCKwf1nVxzR4Wzm4dn5ZiEv1jdZ8kwpmSSlSw2h2qpy61Q1mG3LF4nMiQ">
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold shadow-sm">
+              Save 60%
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-badge text-label-badge font-bold">
+              Popular
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-badge text-label-badge font-bold shadow-sm">
+              4 bags left
+            </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">schedule</span>
+<span class="">Pickup 10:15 – 10:45 PM</span>
+</div>
+<div class="w-6 h-6 rounded-md bg-surface-container-lowest flex items-center justify-center shadow-sm" title="Pure Veg">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="font-semibold text-on-surface">Urban Tandoor</span>
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+</span>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary-container fill-current">star</span>
+<span class="font-headline-sm text-body-sm font-bold">4.5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(312)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-1.5 group-hover:text-primary transition-colors">
+              Dinner Rescue Box (Mughlai &amp; Breads)
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+              Butter naan, paneer tikka butter gravy, slow-simmered dal makhani, and fragrant jeera rice box.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between py-3 bg-surface-container-low rounded-2xl px-4 mb-3">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Rescue Price</span>
+<div class="flex items-baseline gap-2">
+<span class="font-price-hero text-price-hero text-primary font-extrabold">₹199</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹499</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Distance</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface flex items-center justify-end gap-0.5">
+<span class="material-symbols-outlined text-xs text-primary">near_me</span>
+                  2.4 km
+                </span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button py-3 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span class="">Reserve Bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: The Caffeine Hub & Bakes -->
+<article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gourmet café pastry display with shiny chocolate eclairs, moist blueberry streusel muffins, and rich walnut fudge brownies on modern ceramic plates with espresso cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL8HxN_JxJ9H6DmKrF0-r7eOYoyb3r_IGeyKjm3I1sGkRALGT_euYMylvdOhLtdJTWuZeDnkxbn0DJmK1gCsMrLZnfpVSWsC7mC7DZxaRE1R77LDPdZLLk0av9Hp0Fs6G7qZNvwFBcQz38qyZHH8AOo1-wOxjZ0y928a2_LTFsX5R9QAgRK5pnUIsVJmIDE3GON5QCRTAD5ok8O75tUeWIa2FPrHDEnkpfUNqMDBYKqbOGIouGn-V-Bw">
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold shadow-sm">
+              Save 66%
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge font-bold">
+              Selling Fast
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-error font-label-badge text-label-badge font-bold shadow-sm">
+              1 bag left!
+            </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">schedule</span>
+<span class="">Pickup 8:45 – 9:15 PM</span>
+</div>
+<div class="w-6 h-6 rounded-md bg-surface-container-lowest flex items-center justify-center shadow-sm" title="Pure Veg">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="font-semibold text-on-surface">The Caffeine Hub</span>
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+</span>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary-container fill-current">star</span>
+<span class="font-headline-sm text-body-sm font-bold">4.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(96)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-1.5 group-hover:text-primary transition-colors">
+              Evening Pastry &amp; Muffin Duo Bag
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+              Belgium chocolate éclairs, walnut fudge brownies, and fresh blueberry crumble muffins from afternoon counter.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between py-3 bg-surface-container-low rounded-2xl px-4 mb-3">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Rescue Price</span>
+<div class="flex items-baseline gap-2">
+<span class="font-price-hero text-price-hero text-primary font-extrabold">₹120</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹350</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Distance</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface flex items-center justify-end gap-0.5">
+<span class="material-symbols-outlined text-xs text-primary">near_me</span>
+                  800 m
+                </span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button py-3 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span class="">Reserve Bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Chai & Chutney Cloud Kitchen -->
+<article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden crisp Punjabi samosas with fresh mint coriander dip and spiced paneer kathi roll wrapped in foil on wooden board under warm cafe lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcdHc5R9TibAVYV6zhRxlkJxwfuK2cwJuwbhCj1Qd5EmfvI5sFWISn32ncMAPlN8V7rj7bQn6qH0q57T0tkqKm8ECwOIZp8Jmin8RkN-cQwDNJuv8cK-5sszGklyU_h1ygGWZYQ-NobPcXHsNJoPli7pEHbcQAVaVL9v6vPnMehr2sGVJcBN0XD0XKBJIVQspihtuIXOenR1kIbLGwZRPeUhNPC8J0PL3uHaeF7VHAH25Uq6PDAs6ppg">
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold shadow-sm">
+              Save 65%
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-badge text-label-badge font-bold shadow-sm">
+              5 bags left
+            </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">schedule</span>
+<span class="">Pickup 7:30 – 8:15 PM</span>
+</div>
+<div class="w-6 h-6 rounded-md bg-surface-container-lowest flex items-center justify-center shadow-sm" title="Pure Veg">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="font-semibold text-on-surface">Chai &amp; Chutney Cloud Kitchen</span>
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+</span>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary-container fill-current">star</span>
+<span class="font-headline-sm text-body-sm font-bold">4.4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(205)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-1.5 group-hover:text-primary transition-colors">
+              Surplus Evening Snack Feast
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+              Jumbo potato peas samosas, grilled paneer tikka kathi roll, and handcrafted mint coriander chutney.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between py-3 bg-surface-container-low rounded-2xl px-4 mb-3">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Rescue Price</span>
+<div class="flex items-baseline gap-2">
+<span class="font-price-hero text-price-hero text-primary font-extrabold">₹99</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹280</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Distance</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface flex items-center justify-end gap-0.5">
+<span class="material-symbols-outlined text-xs text-primary">near_me</span>
+                  1.8 km
+                </span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button py-3 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span class="">Reserve Bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 5: Crust & Craft Pizzeria -->
+<article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal wood-fired sourdough pizza slices with melting mozzarella, fresh basil leaves, and golden roasted stuffed garlic bread pulls in an upscale pizzeria setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9OoHFTXxUN1b-wD0kBTsbuf3XPAvfylgHZFqFIkiHMUBxEZHY4Z2TldrKDkMUMyiM_VUuxku82ovVhk1PCyfWy7cpxpiEIkKRWYxfttIKcl5eXQANuCorglZCx3KXNqZAjoibQ8J1HW5kiFwayHOzOEBTD3KIS0ALt08XLxDLD01UUAenZEXafmCu6Q7n_2t5Flu2_olrvP1May-GfERR3ikEcBMJnUattm7_5Uw1MjoJ3RPP_3L0Xg">
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold shadow-sm">
+              Save 62%
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-badge text-label-badge font-bold shadow-sm">
+              3 bags left
+            </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">schedule</span>
+<span class="">Pickup 10:30 – 11:00 PM</span>
+</div>
+<div class="w-6 h-6 rounded-md bg-surface-container-lowest flex items-center justify-center shadow-sm" title="Contains Dairy / Veg">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="font-semibold text-on-surface">Crust &amp; Craft Pizzeria</span>
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+</span>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary-container fill-current">star</span>
+<span class="font-headline-sm text-body-sm font-bold">4.7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(420)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-1.5 group-hover:text-primary transition-colors">
+              Gourmet Slice &amp; Garlic Bread Bag
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+              Two premium Roman-crust pizza slices plus mozzarella stuffed sourdough garlic bread fingers with marinara dip.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between py-3 bg-surface-container-low rounded-2xl px-4 mb-3">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Rescue Price</span>
+<div class="flex items-baseline gap-2">
+<span class="font-price-hero text-price-hero text-primary font-extrabold">₹160</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹420</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Distance</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface flex items-center justify-end gap-0.5">
+<span class="material-symbols-outlined text-xs text-primary">near_me</span>
+                  3.1 km
+                </span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button py-3 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span class="">Reserve Bag</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 6: Green Fork Bistro -->
+<article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant healthy salad bowl with roasted chickpeas, tri-color quinoa, sliced avocado, baby spinach, creamy hummus dollop, and lemon tahini dressing in an eco container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Mfs5n4VYYNCgYfZhPmr409ApfGKSUV68is-QJqvCER3YldcoZmxpna1Oj2htdGBqf21GEUIGIuyepzTyLHC-dSsUlocVbZNpMgI7FYIimOOcP7BbibiDquS096W6w1I9yDgH11MtIOLnvRWMTlVZ-Z9ryq1dBBV6UyKS80D1smX2QF_hqh4jKwj0Xey3azzj4tj0Q6GC7HBpJ6vmubwMPbcUEOyfd-uJ3OPRDRYVfAWPNkj30OUCcA">
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge font-bold shadow-sm">
+              Save 61%
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-badge text-label-badge font-bold shadow-sm">
+              2 bags left
+            </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<div class="px-2.5 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">schedule</span>
+<span class="">Pickup 9:00 – 9:30 PM</span>
+</div>
+<div class="w-6 h-6 rounded-md bg-surface-container-lowest flex items-center justify-center shadow-sm" title="Pure Veg">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="font-semibold text-on-surface">Green Fork Bistro</span>
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+</span>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary-container fill-current">star</span>
+<span class="font-headline-sm text-body-sm font-bold">4.6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(78)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-1.5 group-hover:text-primary transition-colors">
+              Fresh Salad &amp; Protein Bowl Rescue
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+              Organic Mediterranean quinoa bowl, smoked paprika chickpeas, avocado, and beetroot hummus side.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between py-3 bg-surface-container-low rounded-2xl px-4 mb-3">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Rescue Price</span>
+<div class="flex items-baseline gap-2">
+<span class="font-price-hero text-price-hero text-primary font-extrabold">₹139</span>
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹360</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Distance</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface flex items-center justify-end gap-0.5">
+<span class="material-symbols-outlined text-xs text-primary">near_me</span>
+                  2.9 km
+                </span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button py-3 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">shopping_bag</span>
+<span class="">Reserve Bag</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- View All Bags Footer Action -->
+<div class="mt-10 text-center">
+<button class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-button text-label-button shadow-sm transition-all" type="button">
+<span class="">Load More Rescue Bags in Greater Noida</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+</section>
+<!-- 5. HOW LEFTO WORKS -->
+<section class="w-full bg-surface-container-low py-16 lg:py-24">
+<div class="max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest block mb-2 font-bold">Simple &amp; Fast</span>
+<h2 class="font-display-hero text-headline-lg lg:text-display-hero text-on-surface mb-3">How LEFTO works</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Three simple steps to rescue surplus food, save big money, and prevent landfill greenhouse emissions today.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col relative group hover:shadow-md transition-all">
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">explore</span>
+</div>
+<span class="font-display-hero text-3xl font-black text-surface-container-highest">01</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-bold">Discover</h3>
+<p class="font-headline-sm text-body-md text-primary font-semibold mb-3">Find surplus food from businesses near you.</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Open the app anytime after 6 PM. Browse verified neighbourhood bakeries, cafés, and kitchens offering fresh unsold meals at 50–70% lower prices.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col relative group hover:shadow-md transition-all">
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-3xl">shopping_cart_checkout</span>
+</div>
+<span class="font-display-hero text-3xl font-black text-surface-container-highest">02</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-bold">Rescue</h3>
+<p class="font-headline-sm text-body-md text-secondary font-semibold mb-3">Reserve a discounted Rescue Bag before it sells out.</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Lock your surprise mystery bag with instant digital payment. Quantities are strictly limited to that day's surplus to guarantee absolute freshness.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col relative group hover:shadow-md transition-all">
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">storefront</span>
+</div>
+<span class="font-display-hero text-3xl font-black text-surface-container-highest">03</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-bold">Enjoy</h3>
+<p class="font-headline-sm text-body-md text-tertiary font-semibold mb-3">Pick it up during collection window &amp; enjoy.</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Walk into the store during the designated window. Show your 4-digit LEFTO collection code and take home delicious premium food.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. TRUST SECTION -->
+<section class="w-full max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop py-16 lg:py-24">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+<div>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest block mb-2 font-bold">Built with Care</span>
+<h2 class="font-display-hero text-headline-lg lg:text-display-hero text-on-surface mb-2">Why people choose LEFTO</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Built for conscious foodies, students, and smart eaters across India looking for premium taste with zero guilt.
+        </p>
+</div>
+<!-- Quick Impact Metric Box -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-center gap-4 shrink-0">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">co2</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">4.2 Tons CO₂e</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Prevented across NCR this month</span>
+</div>
+</div>
+</div>
+<!-- 4 Features Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Feature 1 -->
+<div class="p-6 rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Real businesses</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Only verified restaurants, premium bakeries, and cloud kitchens adhering to stringent FSSAI hygiene standards.
+          </p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="p-6 rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary mb-4">
+<span class="material-symbols-outlined text-2xl">savings</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Big savings</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Get high quality, wholesome meals at significantly lower prices — typically 50% to 70% off menu retail.
+          </p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="p-6 rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-4">
+<span class="material-symbols-outlined text-2xl">pin_drop</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Pickup made simple</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Clear pickup windows, direct in-app GPS navigation, and swift, frictionless OTP verification at collection.
+          </p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="p-6 rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-2xl">nest_eco_leaf</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Less food waste</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Every rescued order keeps good food out of landfills, directly lowering carbon emissions in our neighborhoods.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. PARTNER CTA BANNER -->
+<section class="w-full max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop pb-16 lg:pb-24">
+<div class="relative bg-primary text-on-primary rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden shadow-xl">
+<!-- Background Ambient Glow & Patterns -->
+<div class="absolute -right-16 -top-16 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-primary/10 text-on-primary-container text-xs font-bold uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-sm">handshake</span>
+<span class="">Food Business Partnership</span>
+</div>
+<h2 class="font-display-hero text-headline-lg lg:text-display-hero font-extrabold text-on-primary mb-4 tracking-tight">
+            Turn today's unsold food into tomorrow's revenue.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mb-8 leading-relaxed">
+            List your surplus batches on LEFTO, recover operating costs, and attract new paying customers to your storefront without cannibalizing your regular full-price menu.
+          </p>
+<!-- Buttons & Perks -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-6 w-full sm:w-auto">
+<a class="bg-secondary-container hover:bg-secondary text-on-secondary font-label-button text-label-button px-8 py-4 rounded-full inline-flex items-center justify-center gap-2 transition-colors shadow-lg" data-path="partner-onboarding" href="#">
+<span class="material-symbols-outlined text-lg">storefront</span>
+<span class="">Become a LEFTO Partner</span>
+</a>
+<a class="bg-on-primary/15 hover:bg-on-primary/25 text-on-primary font-label-button text-label-button px-6 py-4 rounded-full inline-flex items-center justify-center transition-colors" data-path="business-resources" href="#">
+<span class="">Learn More</span>
+</a>
+</div>
+<!-- Trust Badges -->
+<div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-on-primary-container font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary-fixed">check_circle</span>
+              Zero setup fee
+            </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary-fixed">check_circle</span>
+              No long-term commitment
+            </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary-fixed">check_circle</span>
+              Get started in 24 hours
+            </span>
+</div>
+</div>
+<!-- Metric Display Column -->
+<div class="lg:col-span-4 flex flex-col items-center justify-center">
+<div class="w-full bg-surface-container-lowest/10 backdrop-blur-md rounded-2xl p-6 text-center">
+<div class="flex items-center justify-center -space-x-2 mb-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-xs shadow-sm">MB</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-xs shadow-sm">UT</div>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-xs shadow-sm">CH</div>
+<div class="w-10 h-10 rounded-full bg-on-primary text-primary flex items-center justify-center font-bold text-xs shadow-sm">+150</div>
+</div>
+<p class="font-headline-md text-headline-md text-on-primary font-bold mb-1">150+ Food Businesses</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+              Across Delhi NCR and Greater Noida currently eliminating daily kitchen food waste with LEFTO.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    // Countdown Timer logic
+    var duration = 42 * 60 + 18;
+    var timerDisplay = document.getElementById('hero-countdown');
+    if (timerDisplay) {
+      setInterval(function() {
+        if (duration > 0) {
+          duration--;
+          var m = Math.floor(duration / 60);
+          var s = duration % 60;
+          timerDisplay.textContent = 'Closing in ' + m + 'm ' + (s < 10 ? '0' : '') + s + 's';
+        }
+      }, 1000);
+    }
+
+    // Category Track Horizontal Scrolling Buttons
+    var catTrack = document.getElementById('category-track');
+    var leftBtn = document.getElementById('cat-scroll-left');
+    var rightBtn = document.getElementById('cat-scroll-right');
+
+    if (catTrack && leftBtn && rightBtn) {
+      leftBtn.addEventListener('click', function() {
+        catTrack.scrollBy({ left: -200, behavior: 'smooth' });
+      });
+      rightBtn.addEventListener('click', function() {
+        catTrack.scrollBy({ left: 200, behavior: 'smooth' });
+      });
+    }
+
+    // Interactive Category Pills
+    var pills = document.querySelectorAll('.category-pill');
+    pills.forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        pills.forEach(function(p) {
+          p.classList.remove('bg-primary', 'text-on-primary');
+          p.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+        pill.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        pill.classList.add('bg-primary', 'text-on-primary');
+      });
+    });
+
+    // Veg Only Filter Toggle effect
+    var vegToggle = document.getElementById('veg-filter-toggle');
+    var vegDot = document.getElementById('veg-dot');
+    if (vegToggle && vegDot) {
+      vegToggle.addEventListener('change', function() {
+        if (this.checked) {
+          vegDot.classList.remove('opacity-0');
+        } else {
+          vegDot.classList.add('opacity-0');
+        }
+      });
+    }
+
+    // Quick Filter Chips Toggle
+    var quickBtns = document.querySelectorAll('.quick-filter-btn');
+    quickBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var isActive = btn.classList.contains('bg-primary');
+        if (isActive) {
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('bg-surface-container-low', 'text-on-surface');
+        } else {
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary');
+        }
+      });
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-auto"><div class="max-w-[1240px] mx-auto px-layout-margin-mobile md:px-layout-margin-tablet lg:px-layout-margin-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl mb-space-2xl"><div class="flex flex-col"><div class="flex items-center gap-space-xs mb-space-md"><img alt="LEFTO Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WV_GtgTpZkx7969jUm9JmqkYTfU0KAFlaKR4xe8IFOmW-kfGSXXHFGn7Uy8KIWan-LsCB7cKkLWmmmrLXfxDwRQ4-r8yhQBHcBnLXjZNgt0sCxTxj2xXLOeEYn9IogZAy-RM46eS30_diDgEHJzTeZ1XQnp1RmmHMvR0EinPli8_agDk1pqlHKUx3W0VG9yXRSJvEJoOBZY1Gaakn0k-TWnANHJfcHlK98Ik7dEUmW2GZvYnYzmiX3dQA9"><span class="font-headline-md text-headline-md font-bold text-primary">LEFTO</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">India's premier surplus food rescue ecosystem. Connecting conscious eaters with top restaurants, bakeries, and cloud kitchens to eliminate food waste.</p><div class="flex items-center gap-space-sm"><a aria-label="Instagram" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-lg">photo_camera</span></a><a aria-label="X Twitter" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-lg">tag</span></a><a aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-lg">business_center</span></a><a aria-label="YouTube" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#"><span class="material-symbols-outlined text-lg">play_circle</span></a></div></div><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">LEFTO</h3><ul class="space-y-space-xs"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="about-us" href="#">About</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">How LEFTO Works</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="careers" href="#">Careers</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Contact</a></li></ul></div><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">For Customers</h3><ul class="space-y-space-xs"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="explore" href="#">Discover Food</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">How It Works</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="orders" href="#">Orders</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="help-center" href="#">Help Center</a></li></ul><h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-lg mb-space-md">For Businesses</h3><ul class="space-y-space-xs"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-onboarding" href="#">Become a Partner</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-login" href="#">Partner Login</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="business-resources" href="#">Business Resources</a></li></ul></div><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Legal</h3><ul class="space-y-space-xs mb-space-lg"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="refund-policy" href="#">Refund Policy</a></li></ul><div class="p-space-md rounded-xl bg-surface-container-high/60 border border-outline-variant/30"><div class="flex items-center gap-space-xs mb-1"><span class="material-symbols-outlined text-primary text-base">eco</span><span class="font-headline-sm text-headline-sm text-on-surface">Green India Mission</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Every order curbs urban landfill emissions and saves valuable food resources.</p></div></div></div><div class="pt-space-xl border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">© 2025 LEFTO Technologies India Pvt. Ltd. All rights reserved. Rescue food, reduce waste.</p><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span>Active in Delhi-NCR</span></div></div></div></footer>
+
+</body></html>
